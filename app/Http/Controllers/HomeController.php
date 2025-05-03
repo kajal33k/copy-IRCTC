@@ -25,4 +25,9 @@ class HomeController extends Controller
     public function enquiry(){
         return view('frontend.enquiry');
     }
+
+    public function catering() {
+        return view('frontend.catering');
+    }
+    
 }

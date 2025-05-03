@@ -29,3 +29,4 @@ Route::get('/login', [HomeController::class, 'login'])->name('frontend.login');
 Route::get('/contact',[HomeController::class, 'contact'])->name('frontend.contact');
 Route::get('/support',[HomeController::class, 'support'])->name('frontend.support');
 Route::get('/enquiry', [HomeController::class, 'enquiry'])->name('frontend.enquiry');
+Route::get('/catering', [HomeController::class, 'catering'])->name('frontend.catering');
