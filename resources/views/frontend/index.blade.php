@@ -392,63 +392,104 @@
 
 
    
-    <div class="container mx-auto px-4 py-12 max-w-6xl">
+    <div class="container mx-auto px-4 py-12 max-w-7xl">
         <!-- Header Section -->
         <header class="text-center mb-16">
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">HOLIDAYS</h1>
             <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
         </header>
-
+    
         <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Maharajas' Express Card -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-r from-amber-100 to-amber-300 flex items-center justify-center">
-                    <h2 class="text-white text-2xl font-bold text-center px-4">Maharajas' Express</h2>
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" alt="Maharajas' Express" class="w-full h-56 object-cover sm:h-64 md:h-72">
+                <div class="bg-gradient-to-r from-amber-700 via-amber-800 to-amber-900 py-4 px-6">
+                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Maharajas' Express</h2>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 mb-6">
-                        Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an "Experience Unsurpassed". It has been a winner of "World's Leading Luxury train" by World Travel Awards consecutively for last six years.
+                    <p class="text-gray-700 text-base md:text-lg mb-6">
+                        Redefining Royalty, Luxury and Comfort, Maharajas' Express takes you on a sojourn to the era of bygone stately splendour. Winner of the "World's Leading Luxury Train" award for six years.
                     </p>
                     <a href="#" class="text-amber-600 font-semibold hover:text-amber-700 transition-colors duration-300 inline-flex items-center">
                         Read More
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </a>
                 </div>
             </div>
-
+    
             <!-- International Packages Card -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-r from-blue-100 to-blue-200 flex items-center justify-center">
-                    <h2 class="text-white text-2xl font-bold text-center px-4">International Packages</h2>
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="{{ asset('https://www.irctc.co.in/nget/assets/images/Thailand.jpg') }}" alt="International Packages" class="w-full h-56 object-cover sm:h-64 md:h-72">
+                <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 py-4 px-6">
+                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">International Packages</h2>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 mb-6">
-                        Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.
+                    <p class="text-gray-700 text-base md:text-lg mb-6">
+                        Handpicked holiday packages for destinations like Thailand, Dubai, Europe, and the USA. Inclusive of sightseeing, meals, visa charges, and insurance.
                     </p>
                     <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 inline-flex items-center">
                         Read More
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Domestic Air Packages Card -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="{{ asset('https://www.irctc.co.in/nget/assets/images/Kashmir.jpg') }}" alt="Domestic Air Packages" class="w-full h-56 object-cover sm:h-64 md:h-72">
+                <div class="bg-gradient-to-r from-green-700 via-green-800 to-green-900 py-4 px-6">
+                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Domestic Air Packages</h2>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 text-base md:text-lg mb-6">
+                        From temples to treks, IRCTC offers spiritual and scenic domestic air packages covering Tirupati, Shirdi, Himalayas, Rajasthan, and more.
+                    </p>
+                    <a href="#" class="text-green-600 font-semibold hover:text-green-700 transition-colors duration-300 inline-flex items-center">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Domestic Air Packages Card -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-r from-green-100 to-green-200 flex items-center justify-center">
-                    <h2 class="text-white text-2xl font-bold text-center px-4">Domestic Air Packages</h2>
+             <!-- International Packages Card -->
+             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="{{ asset('https://www.irctc.co.in/nget/assets/images/Bharat_Gaurav.jpg') }}" alt="International Packages" class="w-full h-56 object-cover sm:h-64 md:h-72">
+                <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 py-4 px-6">
+                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Bharat Gaurav Tourist Train</h2>
                 </div>
                 <div class="p-6">
-                    <p class="text-gray-600 mb-6">
-                        Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!
+                    <p class="text-gray-700 text-base md:text-lg mb-6">
+                        Handpicked holiday packages for destinations like Thailand, Dubai, Europe, and the USA. Inclusive of sightseeing, meals, visa charges, and insurance.
+                    </p>
+                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 inline-flex items-center">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Domestic Air Packages Card -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="{{ asset('https://www.irctc.co.in/nget/assets/images/Manali.jpg') }}" alt="Domestic Air Packages" class="w-full h-56 object-cover sm:h-64 md:h-72">
+                <div class="bg-gradient-to-r from-green-700 via-green-800 to-green-900 py-4 px-6">
+                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Rail Tour Packages</h2>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 text-base md:text-lg mb-6">
+                        From temples to treks, IRCTC offers spiritual and scenic domestic air packages covering Tirupati, Shirdi, Himalayas, Rajasthan, and more.
                     </p>
                     <a href="#" class="text-green-600 font-semibold hover:text-green-700 transition-colors duration-300 inline-flex items-center">
                         Read More
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </a>
@@ -456,5 +497,6 @@
             </div>
         </div>
     </div>
+    
 
 @endsection
