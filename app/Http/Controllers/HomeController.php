@@ -30,4 +30,19 @@ class HomeController extends Controller
         return view('frontend.catering');
     }
     
+    public function passenger(){
+        return view('frontend.passenger');
+    }
+
+    public function train(){
+        return view('frontend.train');
+    }
+
+    public function reservation(){
+        return view('frontend.reservation');
+    }
+
+    public function r_enquiry(){
+        return view('frontend.r_enquiry');
+    }
 }

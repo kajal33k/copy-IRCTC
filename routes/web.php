@@ -30,3 +30,7 @@ Route::get('/contact',[HomeController::class, 'contact'])->name('frontend.contac
 Route::get('/support',[HomeController::class, 'support'])->name('frontend.support');
 Route::get('/enquiry', [HomeController::class, 'enquiry'])->name('frontend.enquiry');
 Route::get('/catering', [HomeController::class, 'catering'])->name('frontend.catering');
+Route::get('/passenger', [HomeController::class, 'passenger'])->name('frontend.passenger');
+Route::get('/train', [HomeController::class, 'train'])->name('frontend.train');
+Route::get('/reservation', [HomeController::class, 'reservation'])->name('frontend.reservation');
+Route::get('/r_enquiry', [HomeController::class, 'r_enquiry'])->name('frontend.r_enquiry');
